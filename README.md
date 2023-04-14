@@ -12,9 +12,9 @@ Where <input_file.csv> is the CSV file you want to check for email bounces.
 ## Customization
 The position of the email domain in the CSV file, as well as the MX domains which are likely to bounce the email, are both customizable in the script.
 
-To edit the position of the email domain in the CSV file, simply modify the EMAIL_COLUMN variable at the top of the script to the appropriate column number (starting from 1).
+To edit the position of the email domain in the CSV file, simply modify the "email_domain_field" variable at the top of the script to the appropriate column number (starting from 1).
 
-To edit the list of MX domains that are likely to bounce the email, modify the BOUNCE_MX_DOMAINS array at the top of the script to include the relevant domains.
+To edit the list of MX domains that are likely to bounce the email, modify the "BADMXdomains" array at the top of the script to include the relevant domains.
 
 ## CSV File Format
 The script expects the input CSV file to have the following format:
