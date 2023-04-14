@@ -20,7 +20,7 @@ To edit the list of MX domains that are likely to bounce the email, modify the B
 The script expects the input CSV file to have the following format:
 
 Column 1, Column 2, ..., Email Domain, Column N
-Where Email Domain is the column containing the email domains to be checked.  Each column must have a header name and at least one of the headers must have the string 'email' so that the script can display the column number for easy entry.
+Where Email Domain is the column containing the email domains to be checked.  Each column must have a header name and at least one of the headers must have the string 'email' so that the script can display the column number for easy entry. The header row will NOT be checked by the dig command because it is required to exist for the script to work properly. 
 
 The script outputs a new CSV file with the following format:
 
@@ -31,7 +31,7 @@ Where Bounce Status is a boolean value indicating whether the email domain is "l
 This script requires the dig command to be installed on the system.
 
 ## License
-This script is released under the MIT License. See LICENSE.md for details.
+This script is released under the MIT License. See LICENSE for details.
 
 ## Acknowledgments
 This script was inspired by the need to quickly check a large list of email domains for bounces.
